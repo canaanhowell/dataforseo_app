@@ -1,0 +1,68 @@
+name: Deploy to VM
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Create deployment package
+      run: |
+        # Create a clean package excluding .git and other unnecessary files
+        tar --exclude='.git' \
+            --exclude='*.pyc' \
+            --exclude='__pycache__' \
+            --exclude='.env' \
+            --exclude='venv' \
+            --exclude='logs' \
+            --exclude='.pytest_cache' \
+            --exclude='*.log' \
+            -czf dataforseo_app.tar.gz .
+    
+    - name: Upload deployment artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: dataforseo-deployment
+        path: dataforseo_app.tar.gz
+        retention-days: 1
+    
+    - name: Trigger deployment webhook
+      env:
+        DEPLOY_TOKEN: ${{ secrets.DATAFORSEO_VM_DEPLOY_TOKEN }}
+        WEBHOOK_URL: ${{ secrets.DATAFORSEO_VM_DEPLOY_WEBHOOK_URL }}
+      run: |
+        curl -X POST "$WEBHOOK_URL" \
+          -H "Content-Type: application/json" \
+          -H "Authorization: Bearer $DEPLOY_TOKEN" \
+          -d '{
+            "version": "${{ github.sha }}",
+            "repository": "${{ github.repository }}",
+            "workflow_run_id": "${{ github.run_id }}"
+          }'
+    
+    - name: Wait for deployment
+      run: sleep 30
+    
+    - name: Check deployment health
+      env:
+        HEALTH_URL: ${{ secrets.DATAFORSEO_VM_HEALTH_CHECK_URL }}
+      run: |
+        response=$(curl -s -w "\n%{http_code}" "$HEALTH_URL")
+        http_code=$(echo "$response" | tail -n1)
+        body=$(echo "$response" | head -n-1)
+        
+        if [ "$http_code" -eq 200 ]; then
+          echo "✅ Deployment successful!"
+          echo "Response: $body"
+        else
+          echo "❌ Health check failed with status code: $http_code"
+          echo "Response: $body"
+          exit 1
+        fi
