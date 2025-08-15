@@ -1,0 +1,347 @@
+{
+  "timestamp": "2025-08-14T16:59:36.650336",
+  "location": "United Kingdom",
+  "keywords_analyzed": 5,
+  "insights": [
+    {
+      "keyword": "chatgpt",
+      "search_volume": 13600000,
+      "trend": "stable",
+      "change_percent": 0.0,
+      "monthly_data": [
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 20400000
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 20400000
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 16600000
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 16600000
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 13600000
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 13600000
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 11100000
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 11100000
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 9140000
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 7480000
+        },
+        {
+          "year": 2024,
+          "month": 8,
+          "search_volume": 5000000
+        },
+        {
+          "year": 2024,
+          "month": 7,
+          "search_volume": 5000000
+        }
+      ]
+    },
+    {
+      "keyword": "artificial intelligence",
+      "search_volume": 33100,
+      "trend": "rising",
+      "change_percent": 22.07,
+      "monthly_data": [
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 49500
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 40500
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 33100
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 40500
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 40500
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 40500
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 27100
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 27100
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 33100
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 27100
+        },
+        {
+          "year": 2024,
+          "month": 8,
+          "search_volume": 22200
+        },
+        {
+          "year": 2024,
+          "month": 7,
+          "search_volume": 27100
+        }
+      ]
+    },
+    {
+      "keyword": "machine learning",
+      "search_volume": 9900,
+      "trend": "rising",
+      "change_percent": 22.22,
+      "monthly_data": [
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 9900
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 9900
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 9900
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 12100
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 12100
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 12100
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 9900
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 12100
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 12100
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 9900
+        },
+        {
+          "year": 2024,
+          "month": 8,
+          "search_volume": 8100
+        },
+        {
+          "year": 2024,
+          "month": 7,
+          "search_volume": 9900
+        }
+      ]
+    },
+    {
+      "keyword": "data science",
+      "search_volume": 14800,
+      "trend": "declining",
+      "change_percent": -18.23,
+      "monthly_data": [
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 12100
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 12100
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 12100
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 14800
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 14800
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 18100
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 12100
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 14800
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 18100
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 18100
+        },
+        {
+          "year": 2024,
+          "month": 8,
+          "search_volume": 18100
+        },
+        {
+          "year": 2024,
+          "month": 7,
+          "search_volume": 14800
+        }
+      ]
+    },
+    {
+      "keyword": "python programming",
+      "search_volume": 8100,
+      "trend": "rising",
+      "change_percent": 22.22,
+      "monthly_data": [
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 8100
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 6600
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 6600
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 8100
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 8100
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 8100
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 6600
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 8100
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 8100
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 8100
+        },
+        {
+          "year": 2024,
+          "month": 8,
+          "search_volume": 5400
+        },
+        {
+          "year": 2024,
+          "month": 7,
+          "search_volume": 6600
+        }
+      ]
+    }
+  ]
+}

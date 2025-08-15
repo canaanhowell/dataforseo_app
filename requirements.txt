@@ -1,0 +1,27 @@
+# Core dependencies
+aiohttp>=3.8.0
+asyncio
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# DataForSEO client
+requests>=2.31.0
+
+# Database
+google-cloud-firestore>=2.11.0
+
+# Testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.0.0
+
+# Development
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
+
+# Logging and monitoring
+rich>=13.0.0
+
+# Utilities
+python-dateutil>=2.8.0
